@@ -44,7 +44,7 @@ const render = function(){
 todoControl.addEventListener('submit', function(event){
     event.preventDefault();
 
-    if(headerInput.value !== '') {
+    if(headerInput.value.trim() !== '') {
         const newTodo = {
         value: headerInput.value,
         completed: false
